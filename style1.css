@@ -1,0 +1,96 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px; /* Centers text inside the card */
+}
+.card-body {
+    overflow: hidden;  /* Hide overflowing content */
+    display: flex;
+    flex-direction: column;
+
+}
+.card-img-top {
+    width: 100%;        /* Ensure the image fills the width of the card */
+    height: 200px;      /* Set a fixed height for all images */
+    object-fit: cover;  /* Ensure the image covers the area without stretching */
+}
+.card-body .btn{
+    margin-bottom: 20px;
+}
+.footer {
+    background-color:rgb(33 37 41);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+.footer a:hover {
+    color: #17a2b8;
+}
+
+.footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.navbar-nav .nav-item a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+
+.navbar-nav .nav-item a:hover {
+    color: #ffffff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the item on hover */
+}
+.navbar-nav .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+    transform: translateY(-10px); /* Starts slightly above */
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Slide down smoothly */
+}
+.footer {
+    background-color:rgb(33 37 41);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+.footer a:hover {
+    color: #17a2b8;
+}
+
+.footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}

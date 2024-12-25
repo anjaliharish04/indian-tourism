@@ -1,0 +1,101 @@
+.parallax {
+    /* The image used */
+    background-image: url("https://plus.unsplash.com/premium_photo-1661885523029-fc960a2bb4f3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWElMjB0b3VyaXNtfGVufDB8fDB8fHww");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navbar {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; 
+}
+.navbar {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+.navbar .navbar-brand img :hover {
+    filter: brightness(0) invert(1);
+}
+
+.why{
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+.why .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.why .card:hover {
+    transform: translateY(-10px); /* Lift the card up */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.why .card .card-body {
+    position: relative;
+    overflow: hidden;
+}
+
+.why .card .card-text {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.why .card:hover .card-text {
+    opacity: 0; /* Hide card text on hover */
+}
+
+.why .card:hover .card-title {
+    opacity: 1; /* Show title when hovering */ 
+}
+
+.navbar-nav .nav-item a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #ffffff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the item on hover */
+}
+.navbar-nav .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+    transform: translateY(-10px); /* Starts slightly above */
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Slide down smoothly */
+}
+.navbar {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+.nav-link {
+    color: white !important;
+}
+
